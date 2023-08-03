@@ -1,0 +1,250 @@
+/* 自訂css --------------------------------------------------*/
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 社群區塊------------------------------------ */
+.topbar {
+  background-color: #f6f6f6;
+  padding: 4px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+ul.menu img {
+  margin-right: 5px;
+}
+ul.menu {
+  display: flex;
+  justify-content: flex-end;
+  /*   border:1px solid #000; */
+}
+ul.menu li {
+  margin-left: 12px;
+}
+
+ul.menu li span {
+  border-left: 1px solid #cccccc;
+}
+
+.menu .link-facebook {
+  color: #4460a0;
+}
+.menu .link-twitter {
+  color: #82c7eb;
+}
+
+.menu .link-facebook:hover {
+  color: #060910;
+}
+.menu .link-twitter:hover {
+  color: #689fbc;
+}
+
+/* logo menu 區塊------------------------------------ */
+.header h1 a {
+  background-image: url("../images/hexschool-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 224px;
+  padding: 25px 0;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+
+.header {
+  /*   border:1px solid #000; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header li a {
+  color: #00251a;
+  font-weight: bolder;
+  display: block;
+  padding: 20px 10px;
+
+  line-height: 20px;
+  border-bottom: 4px solid transparent;
+}
+.header li a:hover {
+  border-bottom: 4px solid #00cc99;
+}
+
+/* banner -------------------------------------------------*/
+.banner {
+  width: 100%;
+  padding: 200px 0;
+  background-image: url(../images/header_background.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.slogan {
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  /*   background-color: #fff;
+  opacity: 0.2; 
+  opacity會導致子元素也是透明*/
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+.banner h2 {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #000;
+  font-size: 36px;
+  letter-spacing: 5px;
+  line-height: 40px;
+
+  /* border:1px solid #000; */
+}
+/* product-list 產品區塊 ---------------------------------------------------------*/
+.product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.product-list .icon-wrapper {
+  width: 320px;
+  height: 200px;
+  /* margin-bottom: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-list li a {
+  margin: 0 14px;
+  padding: 10px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  /*   border:1px solid #E4E3E2; */
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-list li a:hover {
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.product-list h3,
+h4,
+h5 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 5px 10px 20px 10px;
+  text-align: center;
+  /*   border:1px solid #000; */
+}
+
+.product-list p {
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.product-list ol li {
+  list-style: inside;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+/* 比較表 --------------------------------------------------------------------*/
+.comparison-table {
+  margin: 0 auto 50px auto;
+}
+.comparison-table tr {
+  border-top: 1px solid #cccc;
+  border-bottom: 1px solid #cccc;
+}
+.comparison-table tr th,
+.comparison-table tr td {
+  padding: 10px 50px 10px 10px;
+  text-align: left;
+}
+.comparison-table tr th {
+  font-weight: 700;
+}
+.highlights {
+  color: #61b9a3;
+}
+/* 表單 ----------------------------------------------------------------*/
+.form-bg {
+  background-image: linear-gradient(#e4fff8, #a2ddce);
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.personData,
+.memo-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  /*   border:1px solid #000; */
+}
+.form-bg label {
+  text-align: left;
+  margin: 0 10px 10px 0;
+}
+
+.form-bg input,
+.form-bg textarea {
+  width: 300px;
+  padding: 8px;
+  margin: 0 20px 18px 0;
+  border: 1px solid #b3b6b7;
+}
+.form-bg input:focus,
+.form-bg textarea:focus {
+  border: 1px solid #4d5258;
+  outline: none !important;
+}
+.form-bg input[type="submit"] {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+}
+.form-bg input[type="submit"]:hover {
+  background-color: #566573;
+}
+/* 表尾 ---------------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  letter-spacing: 2px;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer li a:hover {
+  border-bottom: 1px solid #61b9a3;
+}
